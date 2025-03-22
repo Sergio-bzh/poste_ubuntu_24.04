@@ -19,7 +19,7 @@ La mise en place de cette configuration a pour but de disposer d'un poste de tra
 - Démarrez le PC (_suivez les instructions d'installation selon vos envies ou besoins_)
 - Notez et conservez vos identifiants
 - A la fin de l'installation retirez la clef USB et redémarrez le PC
-- Ovrez une session avec votre compte utilisateur
+- Ouvrez une session avec votre compte utilisateur
 - Élevez les privilèges et mettez à jour votre système
     - ```sudo apt update && sudo apt upgrade```
 
