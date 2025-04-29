@@ -61,13 +61,16 @@ La mise en place de cette configuration a pour but de disposer d'un poste de tra
 - #### b. Installer Oh_my_zsh (_change aussi le shell par défaut_)
     - ```sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"```
 
-
 - #### c. Installer terminator (_pour remplacer le terminal par défaut_)
     - Allez dans le "**Centre d'applications**" et recherchez le snap "**Terminator**"
     - Cliquez sur **Installez**
 
 - #### d. Installer Guake (Console "_effémère_")
     - ```sudo apt install guake```
+
+- #### e. Générer une paire de clef rsa (et exportez la clef publique sur le serveur distant pour se connecter par clef ssh)
+    - ```ssh-keygen -t rsa -b 4096 -f ~/.ssh/clef_pour_mon_serveur_distant_rsa```
+    - ```ssh-copy-id -i ~/.ssh/clef_pour_mon_serveur_distant_rsa.pub mon_user_sur_le_serveur_distant@fqdn_ou_ip_de_mon_serveur_distant```
 
 ## Vérifier les outils installé :
 - ```git --version```
